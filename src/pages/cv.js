@@ -35,12 +35,62 @@ const Cv = () => {
                             <p>
                                 <a href="mailto:
                                 mrsecmac@gmail.com">
-                                    mrsecmac@gmail.com
+                                    mrsecmac@gmail.com  
                                 </a>
                             </p>
                         </div>
                     </div>
                 </div>
+                {/* ------------------- ÖZET --------------------- */}
+                <div className="cv-about">
+                    <div className="cv-about-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quisquam, quae. Quisquam, quae. Quisquam, quae. Quisquam, quae.
+                        </p>
+                    </div>
+                </div>
+                {/* ----------------- TECRÜBELER -------------------- */}
+                {/* Create timeline experience */}
+                <div className="cv-experience">
+                    <div className="cv-experience-info">
+                        <div className="cv-experience-info-item">
+                            <div className="timeline-dot">
+                                <i className="fas fa-circle"></i>
+                            </div>
+                            <div className="cv-experience-info-item-details">
+                                <div className="cv-experience-info-item-year">
+                                    <p>2018 - 2019</p>
+                                </div>
+                                <div className="cv-experience-info-item-text">
+                                    <h4>Software Developer</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div className="cv-experience-info-item">
+                            <div className="timeline-dot">
+                                <i className="fas fa-circle"></i>
+                            </div>
+                            <div className="cv-experience-info-item-details">
+                                <div className="cv-experience-info-item-year">
+                                    <p>2018 - 2019</p>
+                                </div>
+                                <div className="cv-experience-info-item-text">
+                                    <h4>Software Developer</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
         </div>
     )
     };
