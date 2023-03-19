@@ -2,13 +2,10 @@
 
 }
 .left{
-    border: 1px dashed magenta;
 }
 .right{
-    border: 1px dashed yellow;
 }
 .border{
-    border: 1px dashed green !important;
 }
 .img-pp{
     border-radius: 50%;
