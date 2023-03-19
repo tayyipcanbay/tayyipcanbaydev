@@ -15,10 +15,22 @@ const userData= {
     description: 'Full Stack Developer',
   },
   Navbar: {
-    home: 'Home',
-    skills: 'Skills',
-    projects: 'Projects',
-    contact: 'Contact',
+    1: {
+      name: 'Home',
+      link: '/',
+    },
+    2: {
+      name: 'Skills',
+      link: '/skills',
+    },
+    3: {
+      name: 'Projects',
+      link: '/projects',
+    },
+    4: {
+      name: 'Contact',
+      link: '/contact',
+    },
   },
   Homepage: {
     Left: {
@@ -29,12 +41,22 @@ const userData= {
       },
       Second:{
         Socials: {
-          github: 'https://github.com/tayyipcanbay',
-          linkedin: 'https://www.linkedin.com/in/tayyip-canbay-5b1b1b1b3/',
-          instagram: 'https://instagram.com/tayyipcanbay',
-          twitter: 'https://twitter.com/tayyip_canbay',
-          email: 'mailto:mrsecmac@gmail.com',
+          github:{ link: 'https://github.com/tayyipcanbay', icon: 'fab fa-github'},
+          linkedin:{ link: 'https://www.linkedin.com/in/tayyip-canbay-5b1b1b1b3/', icon: 'fab fa-linkedin'},
+          instagram: { link: 'https://instagram.com/tayyipcanbay', icon: 'fab fa-instagram'},
+          twitter: { link: 'https://twitter.com/tayyip_canbay', icon: 'fab fa-twitter'},
+          email: { link: 'mailto:mrsecmac@gmail.com', icon: 'fas fa-envelope'},
           },
+      },
+    },
+    Right: {
+      First:{
+        title: 'About Me',
+        description: 'I am a 17 years old developer from Turkey. I am currently learning React and React Native. I am also learning Python and C++.',
+      },
+      Second:{
+        title: 'Education',
+        description: 'I am currently studying at the 11th grade of high school. I am also studying at the 3rd grade of Computer Engineering at the University of Selcuk.',
       },
     },
   },
@@ -84,7 +106,7 @@ function App() {
         <div className='row'>
           <div className='col-12'>
         <Routes>
-          <Route path="/" element={<Home theme={theme} />} />
+          <Route path="/" element={<Home homepageData={user["Homepage"]} theme={theme} />} />
           <Route path="/skills" element={<Skills theme={theme} />} />
           <Route path="/projects" element={<Projects theme={theme} />} />
           <Route path="/contact" element={<Contact theme={theme}/>} />
